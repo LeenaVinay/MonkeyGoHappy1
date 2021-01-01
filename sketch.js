@@ -55,9 +55,9 @@ function draw() {
   
    
     if(keyDown("space") ) {
-      monkey.velocityY = -12;
+      monkey.velocityY = -10; //adjusted gravity
     }
-    monkey.velocityY = monkey.velocityY + 0.8;
+    monkey.velocityY = monkey.velocityY + 0.5;
   
     monkey.collide(ground);   
     spawnFood();
